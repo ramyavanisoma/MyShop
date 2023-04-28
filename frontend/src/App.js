@@ -3,7 +3,7 @@ import Header from './components/Header';
 import {Container} from 'react-bootstrap';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 const App=()=> {
   return (
    <>
@@ -19,7 +19,6 @@ const App=()=> {
         </Container>
     
       </main>
-   
     <Footer />
    </Router>
    
