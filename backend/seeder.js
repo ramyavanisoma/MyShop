@@ -6,10 +6,11 @@ import Product from './models/productModel.js'
 import connectDB from './config/db.js'
 
 dotenv.config()
-connectDB()
+
 
 const importData=async()=>{
     try{
+        await connectDB()
         await Product.deleteMany()
         await User.deleteMany()
         const createdUsers=await User.insertMany(users)
